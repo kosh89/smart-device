@@ -5,9 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo logo">
+          <img src="img/header/circuit.png" alt="Логотип Smart Device" class="logo__img">
+          <div class="logo__text">
+            <span class="logo__big-text">Smart Device</span>
+            <span class="logo__small-text">умные технологии</span>
+          </div>
+        </div>
+        <div class="header__contacts contacts">
+          <a class="contacts__email" href="mailto:info@sd.ru">info@sd.ru</a>
+          <a class="contacts__phone" href="tel:+74950005252">+7 (495) 000 52 52</a>
+          <button class="contacts__button button">Заказать звонок</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="start">
+        <div class="start__content">
+          <h1 class="start__heading">Печатные платы</h1>
+          <p class="start__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+          <button class="start__button button">Получить бесплатную консультацию</button>
+          <div class="start__picture">
+            <img src="img/start/scheme.png" alt="" class="start__scheme">
+            <img src="img/start/triangles.png" alt="" class="start__triangles">
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
