@@ -15,6 +15,7 @@
 .start__heading {
   font-size: 80px;
   font-weight: 600;
+  line-height: 94px;
   color: #ffffff;
   text-transform: uppercase;
   margin: 0;
@@ -30,6 +31,7 @@
   font-family: "PT Mono";
   font-size: 22px;
   font-weight: 400;
+  line-height: 34px;
   color: #ffffff;
   margin: 0;
   margin-left: 100px;
@@ -60,6 +62,10 @@
   z-index: 3;
 }
 
+.start__button-text--mobile {
+  display: none;
+}
+
 .start__scheme {
   width: 705px;
   height: 515px;
@@ -86,6 +92,7 @@
 
   .start__heading {
     font-size: 60px;
+    line-height: 70px;
     margin-left: 80px;
     width: 500px;
   }
@@ -93,6 +100,7 @@
   .start__text {
     width: 450px;
     font-size: 18px;
+    line-height: 28px;
     margin-left: 80px;
     padding-left: 60px;
 
@@ -134,6 +142,7 @@
 
   .start__heading {
     font-size: 40px;
+    line-height: 47px;
     margin-left: 15px;
     width: 275px;
   }
@@ -141,6 +150,7 @@
   .start__text {
     width: 300px;
     font-size: 16px;
+    line-height: 25px;
     margin-left: 15px;
     padding-left: 65px;
 
@@ -151,6 +161,15 @@
 
   .start__button {
     margin-left: 15px;
+    width: 287px;
+  }
+
+  .start__button-text--tablet {
+    display: none;
+  }
+
+  .start__button-text--mobile {
+    display: inline-block;
   }
 
   .start__scheme {
