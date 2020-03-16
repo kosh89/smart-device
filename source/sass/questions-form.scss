@@ -1,0 +1,110 @@
+.questions-form {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.questions-form__input {
+  background-color: #1abaff;
+  border: none;
+  margin-bottom: 40px;
+  color: #ffffff;
+  font-family: "PT Mono";
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  padding: 14px 17px;
+
+  &::placeholder {
+    color: #ffffff;
+  }
+
+  &--name,
+  &--phone {
+    flex: 1;
+  }
+
+  &--name {
+    margin-right: 30px;
+  }
+
+  &--question {
+    width: 100%;
+    height: 154px;
+  }
+}
+
+.questions-form__submit {
+  border: 1px solid #ffffff;
+  background-color: #00B2FF;
+  color: #ffffff;
+  width: 270px;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 14px 5px 13px;
+  margin-right: 40px;
+}
+
+.questions-form__label {
+  width: 250px;
+  font-family: "PT Mono";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.questions-form__label {
+  position: relative;
+  padding-left: 32px;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ffffff;
+    top: 8px;
+    left: 0;
+  }
+}
+
+.questions-form__checkbox {
+  &:checked + .questions-form__label::before {
+    background-image: url("../img/questions/check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .questions-form {
+    flex-flow: column;
+  }
+
+  .questions-form__input {
+    margin-bottom: 30px;
+  }
+
+  .questions-form__input {
+    &--name {
+      margin-right: 0;
+    }
+  }
+
+  .questions-form__submit {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+    align-self: center;
+  }
+
+  .questions-form__label {
+    width: 100%;
+
+    &::before {
+      top: 0;
+    }
+  }
+}
