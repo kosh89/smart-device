@@ -34,17 +34,18 @@
           <h1 class="start__heading">Печатные платы</h1>
           <p class="start__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
           <button class="start__button button">
-            <span class="start__button-text--tablet">Получить бесплатную консультацию</span>
-            <span class="start__button-text--mobile">Бесплатная консультация</span>
+            <a href="#questions" class="start__button-text--tablet">Получить бесплатную консультацию</a>
+            <a href="#questions" class="start__button-text--mobile">Бесплатная консультация</a>
           </button>
           <div class="start__picture">
             <img src="img/start/scheme.png" alt="" class="start__scheme">
             <img src="img/start/triangles.png" alt="" class="start__triangles">
           </div>
+          <a href="#advantages" class="start__scroll">Скролл вниз</a>
         </div>
       </section>
 
-      <section class="advantages">
+      <section class="advantages" id="advantages">
         <h2 class="advantages__heading visually-hidden">Преимущества</h2>
         <div class="advantages__content">
           <div class="advantages__item">
@@ -122,7 +123,7 @@
           </div>
 
           <!-- Визуально разделы "преимущества" и "о компании" выглядят как один и имеют общий бэкграунд, поэтому section внутри section -->
-          <section class="about">
+          <section class="about" id="about">
             <div class="about__content">
               <h2 class="about__heading">О компании</h2>
               <p class="about__text">
@@ -138,12 +139,12 @@
         </div>
       </section>
 
-      <section class="goods">
+      <section class="goods" id="goods">
         <div class="goods__content">
           <h2 class="goods__heading">Service Device предлагает следующие товары и услуги</h2>
           <ul class="goods__list">
             <li class="goods__item goods__item--production">
-              <a class="goods__link" href="">
+              <a class="goods__link" href="#">
                 <h3 class="goods__title">Производство печатных плат</h3>
               </a>
             </li>
@@ -161,7 +162,7 @@
         </div>
       </section>
 
-      <section class="questions">
+      <section class="questions" id="questions">
         <div class="questions__content">
           <div class="questions__wrapper">
             <h2 class="questions__heading">Остались вопросы? Задайте их нам!</h2>
@@ -228,15 +229,15 @@
             <label class="navigation__burger" for="navigation-burger"></label>
             <ul class="navigation__list">
               <div class="navigation__wrapper">
-                <li class="navigation__item"><a href="" class="navigation__link">О компании</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link">Продукты</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link">Производство печатных плат</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link">Монтаж печатных плат</a></li>
+                <li class="navigation__item"><a href="#about" class="navigation__link">О компании</a></li>
+                <li class="navigation__item"><a href="#goods" class="navigation__link">Продукты</a></li>
+                <li class="navigation__item"><a class="navigation__link">Производство печатных плат</a></li>
+                <li class="navigation__item"><a class="navigation__link">Монтаж печатных плат</a></li>
               </div>
               <div class="navigation__wrapper">
-                <li class="navigation__item"><a href="" class="navigation__link">Комплектующие</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link">Доставка</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link">Контакты</a></li>
+                <li class="navigation__item"><a class="navigation__link">Комплектующие</a></li>
+                <li class="navigation__item"><a class="navigation__link">Доставка</a></li>
+                <li class="navigation__item"><a class="navigation__link">Контакты</a></li>
               </div>
             </ul>
           </div>

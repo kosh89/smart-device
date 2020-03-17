@@ -62,6 +62,12 @@
   z-index: 3;
 }
 
+.start__button-text--tablet,
+.start__button-text--mobile {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .start__button-text--mobile {
   display: none;
 }
@@ -84,10 +90,32 @@
   z-index: 1;
 }
 
+.start__scroll {
+  font-family: "PT Mono";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.5;
+  position: absolute;
+  transform: rotate(-90deg);
+  left: -35px;
+  bottom: -150px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 @media screen and (max-width: 1023px) {
   .start {
     height: 685px;
     padding-top: 190px;
+  }
+
+  .start__scroll {
+    display: none;
   }
 
   .start__heading {
