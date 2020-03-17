@@ -1,0 +1,169 @@
+.footer {
+  padding-top: 65px;
+}
+
+.footer__content {
+  max-width: 1460px;
+  padding: 0 25px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.footer__top-line {
+  flex: 1;
+}
+
+.footer__logo {
+  margin-bottom: 53px;
+
+  & .logo__big-text {
+    color: #000000;
+  }
+}
+
+.footer__years {
+  &--top-line {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.footer__middle-line {
+  display: flex;
+  flex-direction: row;
+  flex: 2;
+  justify-content: space-between;
+  margin-bottom: 55px;
+}
+
+.footer__bottom-line {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  padding: 14px 0;
+}
+
+.footer__bottom-line {
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: #62696233;
+    width: 200vw;
+    height: 1px;
+    top: 0;
+    left: -100vw;
+  }
+}
+
+.footer__rights,
+.footer__years,
+.footer__confidential,
+.footer__developed {
+  font-family: "PT Mono";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #1b2d3780;
+}
+
+@media screen and (max-width: 1023px) {
+  .footer {
+    padding-top: 20px;
+  }
+
+  .footer__content {
+    flex-flow: column;
+  }
+
+  .footer__top-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 26px;
+    position: relative;
+    align-items: center;
+  }
+
+  .footer__top-line {
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: #62696233;
+      width: 200vw;
+      height: 1px;
+      bottom: 0;
+      left: -100vw;
+    }
+  }
+
+  .footer__logo {
+    margin-bottom: 0;
+  }
+
+  .footer__years {
+    &--top-line {
+      display: block;
+    }
+  }
+
+  .footer__middle-line {
+    padding-top: 38px;
+    margin-bottom: 33px;
+  }
+
+  .footer__bottom-line {
+    padding: 21px 0 24px;
+  }
+
+  .footer__rights,
+  .footer__years--bottom-line {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding-top: 46px;
+  }
+
+  .footer__top-line {
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 54px;
+    align-items: center;
+  }
+
+  .footer__logo {
+    & .logo__text {
+      display: flex;
+    }
+  }
+
+  .footer__years {
+    &--top-line {
+      margin: 26px 0 31px;
+    }
+  }
+
+  .footer__middle-line {
+    padding-top: 29px;
+    flex-direction: column;
+  }
+
+  .footer__bottom-line {
+    flex-direction: column;
+    padding: 27px 0;
+    align-items: center;
+  }
+
+  .footer__confidential {
+    margin-bottom: 21px;
+  }
+}

@@ -1,0 +1,15 @@
+.social__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.social__item--ok {
+  margin: 0 15px;
+}
+
+.social__icon {
+  fill: #cdcdcd;
+}
