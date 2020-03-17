@@ -235,6 +235,26 @@
       </div>
     </footer>
   </div>
-</body>
 
+  <section class="modal modal--closed">
+    <div class="modal__wrapper">
+      <div class="modal__content">
+        <button class="modal__close"></button>
+        <h2 class="modal__heading">Закажите звонок</h2>
+        <span class="modal__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</span>
+        <form class="modal__form modal-form">
+          <input type="text" class="modal-form__input modal-form__input--name" placeholder="Имя">
+          <input type="text" class="modal-form__input modal-form__input--phone" placeholder="Телефон">
+          <textarea class="modal-form__input modal-form__input--question" placeholder="Ваш вопрос"></textarea>
+          <button type="submit" class="modal-form__submit button">Отправить</button>
+          <input class="modal-form__checkbox visually-hidden" type="checkbox" name="modal-personal-data" id="modal-personal-data">
+          <label class="modal-form__label" for="modal-personal-data">Я согласен на обработку персональных
+            данных</label>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
 </html>

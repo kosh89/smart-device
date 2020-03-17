@@ -1,0 +1,58 @@
+.modal {
+  &--closed {
+    display: none;
+  }
+}
+
+.modal__wrapper {
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.modal__content {
+  width: 490px;
+  padding: 33px 40px 36px;
+  background-color: #00B2FF;
+  position: relative;
+}
+
+.modal__close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  top: 20px;
+  right: 20px;
+  border: none;
+  background-image: url("../img/modal/close.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal__heading {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  color: #ffffff;
+  font-size: 28px;
+  line-height: 39px;
+  font-weight: 400;
+}
+
+.modal__text {
+  font-family: "PT Mono";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 30px;
+  display: block;
+  color: #ffffff;
+}
