@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -33,10 +33,10 @@
         <div class="start__content">
           <h1 class="start__heading">Печатные платы</h1>
           <p class="start__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <button class="start__button button">
-            <a href="#questions" class="start__button-text--tablet">Получить бесплатную консультацию</a>
-            <a href="#questions" class="start__button-text--mobile">Бесплатная консультация</a>
-          </button>
+          <a href="#questions" class="start__button button">
+            <span class="start__button-text--tablet">Получить бесплатную консультацию</span>
+            <span class="start__button-text--mobile">Бесплатная консультация</span>
+          </a>
           <div class="start__picture">
             <img src="img/start/scheme.png" alt="" class="start__scheme">
             <img src="img/start/triangles.png" alt="" class="start__triangles">
@@ -144,10 +144,10 @@
             <h2 class="questions__heading">Остались вопросы? Задайте их нам!</h2>
             <span class="questions__small-text">Мы проконсультируем Вас бесплатно</span>
 
-            <form action="" class="questions__form questions-form">
+            <form class="questions__form questions-form">
               <input type="text" class="questions-form__input questions-form__input--name" placeholder="Имя">
               <input type="text" class="questions-form__input questions-form__input--phone" placeholder="Телефон">
-              <textarea name="" id="" class="questions-form__input questions-form__input--question" placeholder="Ваш вопрос"></textarea>
+              <textarea name="question" class="questions-form__input questions-form__input--question" placeholder="Ваш вопрос"></textarea>
               <button class="questions-form__submit button">Задать вопрос</button>
               <input class="questions-form__checkbox visually-hidden" type="checkbox" name="personal-data" id="personal-data">
               <label class="questions-form__label" for="personal-data">Я согласен на обработку персональных
@@ -201,19 +201,19 @@
             <h3 class="navigation__heading">Разделы сайта</h3>
             <input class="navigation__checkbox visually-hidden" type="checkbox" id="navigation-burger" checked="">
             <label class="navigation__burger" for="navigation-burger"></label>
-            <ul class="navigation__list">
-              <div class="navigation__wrapper">
+            <nav class="navigation__list">
+              <ul class="navigation__wrapper">
                 <li class="navigation__item"><a href="#about" class="navigation__link">О компании</a></li>
                 <li class="navigation__item"><a href="#goods" class="navigation__link">Продукты</a></li>
                 <li class="navigation__item"><a class="navigation__link">Производство печатных плат</a></li>
                 <li class="navigation__item"><a class="navigation__link">Монтаж печатных плат</a></li>
-              </div>
-              <div class="navigation__wrapper">
+              </ul>
+              <ul class="navigation__wrapper">
                 <li class="navigation__item"><a class="navigation__link">Комплектующие</a></li>
                 <li class="navigation__item"><a class="navigation__link">Доставка</a></li>
                 <li class="navigation__item"><a class="navigation__link">Контакты</a></li>
-              </div>
-            </ul>
+              </ul>
+            </nav>
           </div>
           <div class="footer__address address">
             <h3 class="address__heading">Наш офис</h3>
@@ -246,7 +246,7 @@
         <form class="modal__form modal-form">
           <input type="text" class="modal-form__input modal-form__input--name" placeholder="Имя">
           <input id="modal-phone" type="text" class="modal-form__input modal-form__input--phone" placeholder="Телефон">
-          <textarea class="modal-form__input modal-form__input--question" placeholder="Ваш вопрос"></textarea>
+          <textarea class="modal-form__input modal-form__input--question" name="modal-question" placeholder="Ваш вопрос"></textarea>
           <button type="submit" class="modal-form__submit button">Отправить</button>
           <input class="modal-form__checkbox visually-hidden" type="checkbox" name="modal-personal-data" id="modal-personal-data">
           <label class="modal-form__label" for="modal-personal-data">Я согласен на обработку персональных
