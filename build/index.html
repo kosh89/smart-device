@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -13,17 +13,17 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__content">
-        <div class="header__logo logo">
-          <img src="img/header/circuit.png" alt="Логотип Smart Device" class="logo__img">
+        <a href="#" class="header__logo logo">
+          <img src="img/header/circuit.png" width="52" height="52" alt="Логотип Smart Device" class="logo__img">
           <div class="logo__text">
             <span class="logo__big-text">Smart Device</span>
             <span class="logo__small-text">умные технологии</span>
           </div>
-        </div>
+        </a>
         <div class="header__contacts contacts">
           <a class="contacts__email" href="mailto:info@sd.ru">info@sd.ru</a>
           <a class="contacts__phone" href="tel:+74950005252">+7 (495) 000 52 52</a>
-          <button class="contacts__button button">Заказать звонок</button>
+          <button type="button" class="contacts__button button">Заказать звонок</button>
         </div>
       </div>
     </header>
@@ -33,13 +33,13 @@
         <div class="start__content">
           <h1 class="start__heading">Печатные платы</h1>
           <p class="start__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <button class="start__button button">
-            <a href="#questions" class="start__button-text--tablet">Получить бесплатную консультацию</a>
-            <a href="#questions" class="start__button-text--mobile">Бесплатная консультация</a>
-          </button>
+          <a href="#questions" class="start__button button">
+            <span class="start__button-text--tablet">Получить бесплатную консультацию</span>
+            <span class="start__button-text--mobile">Бесплатная консультация</span>
+          </a>
           <div class="start__picture">
-            <img src="img/start/scheme.png" alt="" class="start__scheme">
-            <img src="img/start/triangles.png" alt="" class="start__triangles">
+            <img src="img/start/scheme.png" width="705" height="515" alt="Плата" class="start__scheme">
+            <img src="img/start/triangles.png" width="611" height="457" alt="Треугольники" class="start__triangles">
           </div>
           <a href="#advantages" class="start__scroll">Скролл вниз</a>
         </div>
@@ -109,7 +109,7 @@
                 Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
                 Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог..
               </p>
-              <button class="about__more button">Подробнее</button>
+              <button type="button" class="about__more button">Подробнее</button>
             </div>
           </section>
         </div>
@@ -144,11 +144,11 @@
             <h2 class="questions__heading">Остались вопросы? Задайте их нам!</h2>
             <span class="questions__small-text">Мы проконсультируем Вас бесплатно</span>
 
-            <form action="" class="questions__form questions-form">
-              <input type="text" class="questions-form__input questions-form__input--name" placeholder="Имя">
-              <input type="text" class="questions-form__input questions-form__input--phone" placeholder="Телефон">
-              <textarea name="" id="" class="questions-form__input questions-form__input--question" placeholder="Ваш вопрос"></textarea>
-              <button class="questions-form__submit button">Задать вопрос</button>
+            <form class="questions__form questions-form">
+              <input type="text" class="questions-form__input questions-form__input--name" placeholder="Имя" required="">
+              <input type="text" id="question-phone" class="questions-form__input questions-form__input--phone" placeholder="Телефон" required="">
+              <textarea name="question" class="questions-form__input questions-form__input--question" placeholder="Ваш вопрос" required=""></textarea>
+              <button type="submit" class="questions-form__submit button">Задать вопрос</button>
               <input class="questions-form__checkbox visually-hidden" type="checkbox" name="personal-data" id="personal-data">
               <label class="questions-form__label" for="personal-data">Я согласен на обработку персональных
                 данных</label>
@@ -161,13 +161,13 @@
     <footer class="footer">
       <div class="footer__content">
         <div class="footer__top-line">
-          <div class="footer__logo logo">
-            <img src="img/header/circuit.png" alt="Логотип Smart Device" class="logo__img">
+          <a class="footer__logo logo">
+            <img src="img/header/circuit.png" width="52" height="52" alt="Логотип Smart Device" class="logo__img">
             <div class="logo__text">
               <span class="logo__big-text">Smart Device</span>
               <span class="logo__small-text">умные технологии</span>
             </div>
-          </div>
+          </a>
           <p class="footer__years footer__years--top-line">1999-2018 SD Service Devices</p>
           <div class="footer__social social">
             <ul class="social__list">
@@ -198,27 +198,29 @@
         </div>
         <div class="footer__middle-line">
           <div class="footer__navigation navigation">
-            <h3 class="navigation__heading">Разделы сайта</h3>
-            <input class="navigation__checkbox visually-hidden" type="checkbox" id="navigation-burger" checked="">
-            <label class="navigation__burger" for="navigation-burger"></label>
-            <ul class="navigation__list">
-              <div class="navigation__wrapper">
+            <input class="navigation__checkbox visually-hidden" type="radio" name="burder-radio" id="burger-nav" checked="">
+            <label class="navigation__burger" for="burger-nav">
+              <h3 class="navigation__heading">Разделы сайта</h3>
+            </label>
+            <nav class="navigation__list">
+              <ul class="navigation__wrapper">
                 <li class="navigation__item"><a href="#about" class="navigation__link">О компании</a></li>
                 <li class="navigation__item"><a href="#goods" class="navigation__link">Продукты</a></li>
                 <li class="navigation__item"><a class="navigation__link">Производство печатных плат</a></li>
                 <li class="navigation__item"><a class="navigation__link">Монтаж печатных плат</a></li>
-              </div>
-              <div class="navigation__wrapper">
+              </ul>
+              <ul class="navigation__wrapper">
                 <li class="navigation__item"><a class="navigation__link">Комплектующие</a></li>
                 <li class="navigation__item"><a class="navigation__link">Доставка</a></li>
                 <li class="navigation__item"><a class="navigation__link">Контакты</a></li>
-              </div>
-            </ul>
+              </ul>
+            </nav>
           </div>
           <div class="footer__address address">
-            <h3 class="address__heading">Наш офис</h3>
-            <input class="address__checkbox visually-hidden" type="checkbox" id="address-burger" checked="">
-            <label class="address__burger" for="address-burger"></label>
+            <input class="address__checkbox visually-hidden" type="radio" name="burder-radio" id="burger-address">
+            <label class="address__burger" for="burger-address">
+              <h3 class="address__heading">Наш офис</h3>
+            </label>
             <ul class="address__list">
               <li class="address_item"><p class="address__street">г. Мытищи, Олимпийский проспект, д.10</p></li>
               <li class="address_item"><a href="tel:+74955894050" class="address__link">+7 (495) 589-40-50</a></li>
@@ -240,13 +242,13 @@
   <section class="modal modal--closed">
     <div class="modal__wrapper">
       <div class="modal__content">
-        <button class="modal__close"></button>
+        <button type="button" class="modal__close"></button>
         <h2 class="modal__heading">Закажите звонок</h2>
         <span class="modal__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</span>
         <form class="modal__form modal-form">
-          <input type="text" class="modal-form__input modal-form__input--name" placeholder="Имя">
-          <input type="text" class="modal-form__input modal-form__input--phone" placeholder="Телефон">
-          <textarea class="modal-form__input modal-form__input--question" placeholder="Ваш вопрос"></textarea>
+          <input type="text" class="modal-form__input modal-form__input--name" placeholder="Имя" required="">
+          <input id="modal-phone" type="text" class="modal-form__input modal-form__input--phone" placeholder="Телефон" required="">
+          <textarea class="modal-form__input modal-form__input--question" name="modal-question" placeholder="Ваш вопрос" required=""></textarea>
           <button type="submit" class="modal-form__submit button">Отправить</button>
           <input class="modal-form__checkbox visually-hidden" type="checkbox" name="modal-personal-data" id="modal-personal-data">
           <label class="modal-form__label" for="modal-personal-data">Я согласен на обработку персональных
@@ -256,6 +258,6 @@
     </div>
   </section>
 
-  <script src="js/main.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

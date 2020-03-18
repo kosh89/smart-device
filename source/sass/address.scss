@@ -38,6 +38,16 @@
     position: relative;
   }
 
+  .address__heading {
+    padding-top: 28px;
+    padding-bottom: 29px;
+  }
+
+  .address__list {
+    margin: 0;
+    margin-bottom: 28px;
+  }
+
   .address__burger {
     &::after {
       position: absolute;
@@ -53,7 +63,7 @@
   }
 
   .address__checkbox {
-    &:checked ~ .address__list {
+    &:not(:checked) ~ .address__list {
       display: none;
     }
 
