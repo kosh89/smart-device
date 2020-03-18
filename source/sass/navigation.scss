@@ -17,8 +17,11 @@
   flex-direction: row;
 }
 
-.navigation__wrapper {
+.navigation__wrapper {  
+  margin: 0;
   margin-right: 65px;
+  padding: 0;
+  list-style: none;  
 }
 
 .navigation__link {
