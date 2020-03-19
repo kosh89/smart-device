@@ -6,10 +6,20 @@
   flex-direction: row;
 }
 
-.social__item--ok {
-  margin: 0 15px;
+.social__item {
+  &--ok {
+    margin: 0 15px;
+  }
 }
 
 .social__icon {
   fill: #cdcdcd;
+}
+
+.social__icon {
+  transition: .3s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
 }

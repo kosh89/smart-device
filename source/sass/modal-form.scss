@@ -10,6 +10,10 @@
   padding: 14px 24px;
   width: 100%;
 
+  &:focus {
+    background-color: #5acdff;
+  }
+
   &::placeholder {
     color: #ffffff;
   }

@@ -62,11 +62,15 @@
   padding: 18px 5px;
   position: relative;
   z-index: 3;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #00B2FF;
+  }
 }
 
 .start__button-text {
   text-decoration: none;
-  color: #ffffff;
 
   &--mobile {
     display: none;
