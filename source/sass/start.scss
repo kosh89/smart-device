@@ -64,14 +64,13 @@
   z-index: 3;
 }
 
-.start__button-text--tablet,
-.start__button-text--mobile {
+.start__button-text {
   text-decoration: none;
   color: #ffffff;
-}
 
-.start__button-text--mobile {
-  display: none;
+  &--mobile {
+    display: none;
+  }
 }
 
 .start__scheme {
@@ -194,12 +193,14 @@
     width: 287px;
   }
 
-  .start__button-text--tablet {
-    display: none;
-  }
+  .start__button-text {
+    &--tablet {
+      display: none;
+    }
 
-  .start__button-text--mobile {
-    display: inline-block;
+    &--mobile {
+      display: inline-block;
+    }
   }
 
   .start__scheme {
