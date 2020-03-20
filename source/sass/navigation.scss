@@ -59,6 +59,9 @@
 
   .navigation__heading {
     padding: 29px 0;
+    background-image: url("../img/footer/plus.png");
+    background-repeat: no-repeat;
+    background-position: right center;
   }
 
   .navigation__burger {
@@ -68,7 +71,7 @@
     left: 0;
     right: 0;
 
-    &::after {
+    /* &::after {
       position: absolute;
       content: "";
       width: 16px;
@@ -78,7 +81,7 @@
       background-position: center;
       top: 29px;
       right: 0;
-    }
+    } */
   }
 
   .navigation__checkbox {
@@ -86,8 +89,8 @@
       display: none;
     }
 
-    &:checked + .navigation__burger::after {
-      background-image: url("../img/footer/plus.png");
+    &:checked + .navigation__heading {
+      background-image: url("../img/footer/minus.png");
     }
   }
 

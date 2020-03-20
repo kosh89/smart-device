@@ -42,6 +42,9 @@
   .address__heading {
     padding-top: 28px;
     padding-bottom: 29px;
+    background-image: url("../img/footer/plus.png");
+    background-repeat: no-repeat;
+    background-position: right center;
   }
 
   .address__list {
@@ -56,7 +59,7 @@
     left: 0;
     right: 0;
 
-    &::after {
+    /* &::after {
       position: absolute;
       content: "";
       width: 16px;
@@ -66,7 +69,7 @@
       background-position: center;
       top: 28px;
       right: 0;
-    }
+    } */
   }
 
   .address__checkbox {
@@ -74,8 +77,8 @@
       display: none;
     }
 
-    &:checked + .address__burger::after {
-      background-image: url("../img/footer/plus.png");
+    &:checked + .address__heading {
+      background-image: url("../img/footer/minus.png");
     }
   }
 }
