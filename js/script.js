@@ -153,10 +153,6 @@ window.addEventListener("DOMContentLoaded", function () {
   var modalPhone = document.querySelector("#modal-phone");
   var questionPhone = document.querySelector("#question-phone");
 
-  questionPhone.addEventListener('input', function () {
-    console.log(questionPhone.value.length)
-  })
-
   modalPhone.addEventListener("input", mask, false);
   modalPhone.addEventListener("focus", mask, false);
   modalPhone.addEventListener("blur", mask, false);
