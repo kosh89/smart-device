@@ -18,19 +18,17 @@
   flex-direction: column;
 }
 
-.address__street {
-  margin: 0;
-  padding: 0;
-}
-
-.address__link,
-.address__street {
+.address__link {
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 25px;
   text-decoration: none;
   color: #1b2d3780;
+
+  &:hover {
+    color: #00b2ff;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -58,18 +56,6 @@
     bottom: 0;
     left: 0;
     right: 0;
-
-    /* &::after {
-      position: absolute;
-      content: "";
-      width: 16px;
-      height: 16px;
-      background-image: url("../img/footer/minus.png");
-      background-repeat: no-repeat;
-      background-position: center;
-      top: 28px;
-      right: 0;
-    } */
   }
 
   .address__checkbox {

@@ -82,6 +82,11 @@
   height: 100%;
   position: relative;
   z-index: 1;
+  border: 1px solid transparent;
+
+  &:hover {
+    border: 1px solid #00b2ff;
+  }
 }
 
 .goods__title {

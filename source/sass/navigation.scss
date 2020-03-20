@@ -32,6 +32,10 @@
   line-height: 25px;
   text-decoration: none;
   color: #1b2d3780;
+
+  &:hover {
+    color: #00b2ff;
+  }
 }
 
 @media screen and (max-width: 1023px) {
@@ -70,18 +74,6 @@
     bottom: 0;
     left: 0;
     right: 0;
-
-    /* &::after {
-      position: absolute;
-      content: "";
-      width: 16px;
-      height: 16px;
-      background-image: url("../img/footer/minus.png");
-      background-repeat: no-repeat;
-      background-position: center;
-      top: 29px;
-      right: 0;
-    } */
   }
 
   .navigation__checkbox {
