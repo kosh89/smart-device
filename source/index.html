@@ -156,9 +156,11 @@
               <textarea name="question" id="question-textarea" class="questions-form__input questions-form__input--question" placeholder="Ваш вопрос" required></textarea>
 
               <button type="submit" class="questions-form__submit button">Задать вопрос</button>
-              <input class="questions-form__checkbox visually-hidden" type="checkbox" name="personal-data" id="personal-data">
-              <label class="questions-form__label" for="personal-data">Я согласен на обработку персональных
-                данных</label>
+              <div class="question-form__personal">
+                <input class="questions-form__checkbox visually-hidden" type="checkbox" name="personal-data" id="personal-data" checked required>
+                <label class="questions-form__label" for="personal-data">Я согласен на обработку персональных
+                  данных</label>
+              </div>
             </form>
           </div>
         </div>
@@ -263,9 +265,11 @@
           <textarea id="modal-question" class="modal-form__input modal-form__input--question" name="modal-question" placeholder="Ваш вопрос" required></textarea>
 
           <button type="submit" class="modal-form__submit button">Отправить</button>
-          <input class="modal-form__checkbox visually-hidden" type="checkbox" name="modal-personal-data" id="modal-personal-data">
-          <label class="modal-form__label" for="modal-personal-data">Я согласен на обработку персональных
-            данных</label>
+
+          <div class="question-form__personal">
+            <input class="modal-form__checkbox visually-hidden" type="checkbox" name="modal-personal-data" id="modal-personal-data" checked required>
+            <label class="modal-form__label" for="modal-personal-data">Я согласен на обработку персональных данных</label>
+          </div>
         </form>
       </div>
     </div>
