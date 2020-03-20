@@ -150,7 +150,7 @@
               <input type="text" id="question-name" class="questions-form__input questions-form__input--name" placeholder="Имя" required>
 
               <label for="question-phone" class="visually-hidden">Ваш телефон</label>
-              <input type="text" id="question-phone" class="questions-form__input questions-form__input--phone" placeholder="Телефон" required>
+              <input type="text" id="question-phone" class="questions-form__input questions-form__input--phone" placeholder="Телефон" pattern=".{17,}" required>
 
               <label for="question-textarea" class="visually-hidden">Ваш вопрос</label>
               <textarea name="question" id="question-textarea" class="questions-form__input questions-form__input--question" placeholder="Ваш вопрос" required></textarea>
@@ -259,7 +259,7 @@
           <input type="text" id="modal-name" class="modal-form__input modal-form__input--name" placeholder="Имя" required>
 
           <label for="modal-phone" class="visually-hidden">Ваше имя</label>
-          <input type="text" id="modal-phone" class="modal-form__input modal-form__input--phone" placeholder="Телефон" required>
+          <input type="text" id="modal-phone" class="modal-form__input modal-form__input--phone" placeholder="Телефон" pattern=".{17,}" required>
 
           <label for="modal-question" class="visually-hidden">Ваше имя</label>
           <textarea id="modal-question" class="modal-form__input modal-form__input--question" name="modal-question" placeholder="Ваш вопрос" required></textarea>
