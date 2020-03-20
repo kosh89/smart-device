@@ -2,7 +2,7 @@
   height: 880px;
   background-color: #1B2D37;
   background-image: url("../img/start/background.png");
-  padding: 0 5px;
+  padding: 0 25px;
   padding-top: 315px;
 }
 
@@ -116,6 +116,7 @@
 @media screen and (max-width: 1023px) {
   .start {
     height: 685px;
+    padding: 0;
     padding-top: 190px;
   }
 
