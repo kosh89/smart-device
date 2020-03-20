@@ -153,6 +153,10 @@ window.addEventListener("DOMContentLoaded", function () {
   var modalPhone = document.querySelector("#modal-phone");
   var questionPhone = document.querySelector("#question-phone");
 
+  questionPhone.addEventListener('input', function () {
+    console.log(questionPhone.value.length)
+  })
+
   modalPhone.addEventListener("input", mask, false);
   modalPhone.addEventListener("focus", mask, false);
   modalPhone.addEventListener("blur", mask, false);
@@ -160,3 +164,18 @@ window.addEventListener("DOMContentLoaded", function () {
   questionPhone.addEventListener("focus", mask, false);
   questionPhone.addEventListener("blur", mask, false);
 });
+
+const navCheckbox = document.querySelector('.navigation__checkbox');
+const adrCheckbox = document.querySelector('.address__checkbox');
+
+navCheckbox.addEventListener('change', function () {
+  if (navCheckbox.checked) {
+    adrCheckbox.checked = false;
+  }
+})
+
+adrCheckbox.addEventListener('change', function () {
+  if (adrCheckbox.checked) {
+    navCheckbox.checked = false;
+  }
+})
