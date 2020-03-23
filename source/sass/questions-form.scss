@@ -75,6 +75,10 @@
     top: 8px;
     left: 0;
   }
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .questions-form__checkbox {
